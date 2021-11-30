@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-int main(void)
+char *_getline(void)
 {
 	int bytes_read;
 	size_t size = 10;
@@ -20,7 +20,5 @@ int main(void)
 		puts(string);
 		printf("size: %d", bytes_read);
 	}
-
-free(string);
-return (0);
+return (string);
 }
